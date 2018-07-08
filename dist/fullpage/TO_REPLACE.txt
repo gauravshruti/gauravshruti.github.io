@@ -3,6 +3,8 @@
 		$(document).ready(function () {
 			$('#main').fullpage({
 				scrollBar: true,
+				navigation: true,
+				navigationPosition: 'right',
 			});
 		});
 	</script>
