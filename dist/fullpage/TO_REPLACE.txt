@@ -2,7 +2,7 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('#main').fullpage({
-				anchors: ['home', 'date'],
+				scrollBar: true,
 			});
 		});
 	</script>
