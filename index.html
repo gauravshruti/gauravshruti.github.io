@@ -5,21 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shaadikamahaul</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam&amp;subset=devanagari">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="dist/fullpage/css/fullpage.min.css" />
 </head>
 
 <body>
-    <div id="outer-wrapper">
-        <div id="home" class="section">
+    <main id="main">
+        <section class="section" style="min-height:none;">
             <div class="container">
                 <div class="row" style="margin-top:2%;">
                     <div class="col">
                         <h2 class="text-capitalize text-left">Gaurav &amp; Shruti</h2>
                     </div>
                 </div>
-                <div class="row" style="padding-top:20%;">
+                <div class="row" style="padding-top:30%;">
                     <div class="col-auto offset-0 offset-sm-2 offset-md-3 offset-lg-4 offset-xl-4">
                         <div class="card border-white">
                             <div class="card-body">
@@ -29,10 +30,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="savethedate" class="section">
+        </section>
+        <section class="section">
             <div class="container">
-                <div class="row no-gutters" style="padding-top:30%;">
+                <div class="row no-gutters">
                     <div class="col offset-0">
                         <div class="card border-white">
                             <div class="card-body">
@@ -42,11 +43,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/fullpage/js/fullpage.min.js"> </script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#main').fullpage({
+				anchors: ['home', 'date'],
+			});
+		});
+	</script>
 </body>
 
 </html>
