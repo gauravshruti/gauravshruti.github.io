@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaadi ka Mahaul</title>
+    <title>Shaadi Ka Mahaul</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calligraffitti">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement">
@@ -42,8 +42,8 @@
                 </div>
             </div>
         </section>
-        <section class="section" style="min-height:98vh;">
-            <div class="container" style="min-height:98vh;"><img class="img-fluid" src="assets/img/DigitalInviteCard1.svg" width="auto" height="100%" data-bs-hover-animate="pulse"></div>
+        <section class="section" style="max-height:98vh;min-height:98vh;">
+            <div class="container" style="min-height:98vh;max-height:98vh;"><img class="img-fluid" src="assets/img/DigitalInviteCard1.svg" width="auto" height="100%" data-bs-hover-animate="pulse" style="max-height:98vh;"></div>
         </section>
     </main>
     <script src="assets/js/jquery.min.js"></script>
@@ -51,14 +51,12 @@
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script type="text/javascript" src="dist/fullpage/js/fullpage.min.js"> </script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#main').fullpage({
-				scrollBar: true,
-				navigation: true,
-				navigationPosition: 'right',
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#main').fullpage({
+					scrollBar: true,
+				});
 			});
-		});
 	</script>
 </body>
 
