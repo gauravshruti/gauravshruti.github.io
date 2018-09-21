@@ -1,10 +1,10 @@
-    <script type="text/javascript" src="dist/fullpage/js/fullpage.min.js"> </script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#main').fullpage({
-				scrollBar: true,
-				navigation: true,
-				navigationPosition: 'right',
-			});
+<script type="text/javascript" src="dist/fullpage/js/fullpage.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#main').fullpage({
+			scrollBar: true,
+			navigation: true,
+			navigationPosition: 'right',
 		});
-	</script>
+	});
+</script>
